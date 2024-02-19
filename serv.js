@@ -23,6 +23,6 @@ app.post("/hi", (req, res) => {
   res.send("everythin is ok");
 });
 
-app.listen(process.env.MY_APP_PORT, () => {
+app.listen(process.env.MY_APP_PORT || 3000, () => {
   console.log("server started on ");
 });
